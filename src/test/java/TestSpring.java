@@ -10,7 +10,7 @@ public class TestSpring {
     public void test_Spring(){
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(AppContext.class);
         User user = (User) annotationConfigApplicationContext.getBean("user");
-//        user.println();
+        user.println();
 
     }
 
