@@ -30,7 +30,7 @@ public class StudyInstallBefaul implements InstantiationAwareBeanPostProcessor {
     }
 
     public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
-        System.err.println("注入点");
+        System.err.println("注入点 ");
         return null;
     }
 }
