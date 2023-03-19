@@ -2,6 +2,7 @@ package com.spring_s;
 
 import com.spring_s.bean.OrderService;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.PropertyValue;
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -29,6 +30,7 @@ public class StudyInstallBefaul implements InstantiationAwareBeanPostProcessor {
     }
 
     public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
+        System.err.println("注入点");
         return null;
     }
 }

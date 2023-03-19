@@ -15,6 +15,7 @@ public class StudyMargedBeanDefinitionPostProcess implements MergedBeanDefinitio
     public void postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName) {
         if (beanName.equals("userService")){
             System.err.println("这里是BeanDefintion 实例化后置处理器");
+            //使用api直接添加BeanDefinition中的属性
             beanDefinition.getPropertyValues().add("orderService",new OrderService());
         }
     }
